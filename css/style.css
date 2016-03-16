@@ -180,9 +180,20 @@ aside ul {
 /* Footer */
 footer {
 	clear: both;
-	background: white;
-	margin: 50px 30px;
+	background: #606160;
+	margin: 0 auto;
 	padding: 20px;
+	color: white;
+}
+
+footer a:link {
+	color: white;
+}
+
+footer a:hover {
+	color: #FF8276;
+	text-decoration: none;
+
 }
 
 footer ul {
@@ -192,9 +203,9 @@ footer ul {
 
 footer li {
 	display:inline-block;
-	color: black;
 	font-size: 26px;
 }
+
 footer li:hover {
 	color: #FF8276;
 }
