@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1099px) {
+	.container {
+		width: 100%;
+	}
+	aside {
+		width: 25%;
+		margin: 3% 3% 3% 0;
+	}
+	aside img {
+		width: 80%;
+	}
+	main {
+		width: 55%;
+		margin: 3%;
+		padding: 3%;
+	}
+	.nav-main {
+		width: 100%;
+		clear: both;
+	}
+	.nav-main li:hover {
+		color: white;
+		background: #FF8276;
+	}
+	.nav-main li a {
+		color: black;
+		padding: 3px;
+	}
+	.box {
+		width: 20%;
+		height: auto;
+		margin: 3% 7% 3% 3%;
+		float: left;
+		padding: 2%;
+	}
+	.box:last-child {
+		margin-right: 0;
+	}
+	.box p {
+		display: none;
+	}
+}
+@media only screen and (max-width: 999px) {
+	main {
+		width: 50%;
+		margin: 3%;
+		padding: 2%;
+		float: left;
+	}
+	aside {
+		width: 30%;
+		margin: 3% 3% 3% 0;
+		padding: 2%;
+		float: right;
+	}
+	aside img {
+		width: 80%;
+	}	
+	.box {
+		width: 50%;
+		height: auto;
+		margin: 2% 2% 2% 3%;
+		float: left;
+		padding: 2%;
+	}
+	.box p {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	main {
+		width: 90%;
+		float: none;
+		position: center;
+	}
+	aside {
+		width: 90%;
+		margin: 3%;
+		float: none;
+		position: center;
+	}
+	.box {
+		width: 50%;
+		height: auto;
+		margin: 3%;
+		table-layout: fixed;
+		padding: 2%;
+	}
+	.box p {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	h2 {
+	 font-size: 22px;
+	}
+	h3 {
+	 font-size: 20px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	h5 {
+		font-size: 14px
+	}
+	p {
+	font-size: 14px;
+	}
+	.nav-main li {
+		display: block;
+	}
+}
+
