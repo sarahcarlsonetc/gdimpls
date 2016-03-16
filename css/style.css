@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-	background: white;
+	background: #F7F4F5;
 
 }
 p {
@@ -73,6 +73,8 @@ button {
 	padding: 8px;
 	border-radius: 2px;
 	margin: 10px;
+	border: none !important;
+	box-shadow: none !important;
 }
 
 button:hover {
@@ -115,9 +117,11 @@ header {
 
 /* Section: Banner + Feature */
 .banner {
-	background: url("../images/outside.jpg") no-repeat scroll top center / cover;
+	background: url("../images/Header.png") no-repeat scroll top center / cover;
 	min-height: 150px;
+	max-width: 800px;
 	clear: both;
+	margin: 0 auto;
 }
 
 .feature {
@@ -145,7 +149,6 @@ aside {
 	float: right;
 	width: 260px;
 	padding: 30px 20px 10px 20px;
-	background: white;
 	text-align: center;
 }
 
