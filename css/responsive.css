@@ -18,13 +18,16 @@
 		width: 100%;
 		clear: both;
 	}
-	.nav-main li:hover {
-		color: white;
-		background: #FF8276;
-	}
 	.nav-main li a {
 		color: black;
 		padding: 3px;
+	}
+	.nav-main li a:hover {
+		color: #FF8276;
+		text-decoration: none;
+	}
+	a:active {
+		color: #3E3A40;
 	}
 	.box {
 		width: 20%;
@@ -71,8 +74,13 @@
 @media only screen and (max-width: 850px) {
 	main {
 		width: 90%;
+		padding: 2%;
+		margin: 3%;
 		float: none;
 		position: center;
+	}
+	.content {
+		padding: 3%;
 	}
 	aside {
 		width: 90%;
@@ -106,10 +114,22 @@
 		font-size: 14px
 	}
 	p {
-	font-size: 14px;
+		font-size: 14px;
+	}
+	.nav-main {
+		width: 100%;
 	}
 	.nav-main li {
 		display: block;
+	}
+	.nav-main li a:hover {
+		color: white;
+	}
+	.nav-main li:hover {
+		background: #FF8276;
+	}
+	.content{
+		padding-top: 30%;
 	}
 }
 
