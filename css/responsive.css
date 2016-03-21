@@ -7,7 +7,7 @@
 		margin: 3% 3% 3% 0;
 	}
 	aside img {
-		width: 80%;
+		width: 50%;
 	}
 	main {
 		width: 55%;
@@ -57,7 +57,7 @@
 		float: right;
 	}
 	aside img {
-		width: 80%;
+		width: 50%;
 	}	
 	.box {
 		width: 50%;
@@ -82,18 +82,23 @@
 	.content {
 		padding: 3%;
 	}
+	.secondary {
+		width: 80%;
+	}
 	aside {
 		width: 90%;
 		margin: 3%;
 		float: none;
 		position: center;
 	}
+	aside img {
+		width: 40%;
+	}
 	.box {
 		width: 50%;
-		height: auto;
 		margin: 3%;
-		table-layout: fixed;
-		padding: 2%;
+		float: none;
+		position: center;
 	}
 	.box p {
 		display: none;
@@ -129,7 +134,7 @@
 		background: #FF8276;
 	}
 	.content{
-		padding-top: 30%;
+		padding-top: 0;
 	}
 }
 

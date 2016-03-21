@@ -1,12 +1,16 @@
 /* General Styles */
+html {
+	position: relative; /*allow for the footer to be position absolute and know where its starting point is*/
+	min-height: 100%; /*ensures we use the whole screen size for height so the footer can be shown at the bottom*/
+}
 body {
 	background: #F7F4F5;
-
+	margin: 0 0 200px; /*make sure there is a margin at the bottom so footer doesnt overlap*/
 }
 p {
 	font-size: 16px;
 	font-family: 'Source Sans Pro', sans-serif;
-
+	margin-bottom: 16px;
 }
 a {
 	color: black;
@@ -21,16 +25,10 @@ a:hover {
 }
 a:active {
 	color: #3E3A40;
-
-}
-
-img {
-	border-radius: 50%;
 }
 
 img:hover {
 	opacity: 0.75;
-}
 }
 h1 {
 
@@ -70,7 +68,7 @@ button {
 	background: #F27166;
 	color: white;
 	font-family: sans-serif;
-	padding: 8px;
+	padding: 5px;
 	border-radius: 2px;
 	margin: 10px;
 	border: none !important;
@@ -79,6 +77,9 @@ button {
 
 button:hover {
 	background: #FF8276;
+}
+.social li{
+	padding: 5px;
 }
 
 /* Header */
@@ -89,7 +90,6 @@ button:hover {
 }
 .nav-main {
 	width: 1000px;
-	float: right;
 	margin: 0 auto;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
@@ -129,16 +129,26 @@ button:hover {
 
 /* Secton: Content */
 .content {
+}
 
+.secondary {
+	clear: both;
+	background: white;
+	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	max-width: 800px;
 }
 
 main {
 	float: left;
 	width: 630px;
 	margin-right: 30px;
+	margin-top: 30px;
 	padding: 30px 20px 20px 20px;
-	background: white;
 	margin-bottom: 30px;
+	background: white;
 }
 
 aside {
@@ -148,17 +158,23 @@ aside {
 	text-align: center;
 }
 
+aside img {
+	border-radius: 50%;
+}
+
 aside ul {
 	list-style-type: none;
+}
+aside li {
+	display: inline-block;
+	font-size: 24px;
 }
 
 /* Section: Services */
 .services {
-
 }
 
 .box {
-	color: black;
 	width: 240px;
 	height: 120px;
 	margin-right: 25px;
@@ -175,21 +191,21 @@ aside ul {
 
 /* Footer */
 footer {
-	clear: both;
-	background: #606160;
-	margin: 0 auto;
-	padding: 20px;
+	height: 200px; /*set footer height*/
+	background: #303030;
+	position: absolute; /*forces the footer position to be in a specific place*/
+	bottom: 0; /*tells the footer to be zero pixels from the bottom of the html tag*/
+	width: 100%; /*ensures the footer takes up the whole screen width wise*/
 	color: white;
 }
 
-footer a:link {
+footer a {
 	color: white;
 }
 
 footer a:hover {
 	color: #FF8276;
 	text-decoration: none;
-
 }
 
 footer ul {
@@ -200,6 +216,7 @@ footer ul {
 footer li {
 	display:inline-block;
 	font-size: 26px;
+	margin: 2px;
 }
 
 footer li:hover {
