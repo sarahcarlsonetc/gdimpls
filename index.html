@@ -2,13 +2,23 @@
 <html>
 <head>
 	<title>Sarah Carlson, Etc.</title>
+
+    <!-- Load the reset stylesheet first. -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- Load the style sheets you are getting from else where next. -->
 	<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Load the local site style sheets last. -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- Remember that styles "cascade" and the last one's loaded take precedence of the prior ones.
+        I don't think this would be an issue for this site, but it's a best practice. -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -44,34 +54,37 @@
 				<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 				<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 				<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-			</br>
+			<br>
 				<h3><a href="#">Another Content Title!</a></h3>
 				<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 				<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 				<p>Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 			</main>
 			<aside>
-			<div class="sidebar_pic">
-				<img src="images/SarahC.jpg" width="175px">
-			</div>
-				<h4><a href="#">About/Contact</a></h4>
-			</br>
+                <div class="sidebar_pic">
+                    <img src="images/SarahC.jpg" width="175px">
+                </div>
+                <h4><a href="#">About/Contact</a></h4>
+                <!-- The "line break" tag <br> does not have or need any slashes on it, but you were setting it as </br> which is an *ending* tag, and does not exist. -->
+                <br><!-- Don't use <br> to create space, instead alter the CSS margin-bottom to be what you want. -->
 				<h5>Sarah Carlson</h5>
-			</br></br>
+			    <!--<br><br>-->
 				<h4>Get in Touch</h4>
-					</br>
-				<div class="social"
+                <!--<br>-->
+				<div class="social">
 					<ul>
 						<li><a href="https://www.twitter.com/sarahcarlsonetc" target="_blank"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/sarah-carlson-7aa37b66" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 						<li><a href="https://www.instagram.com/sarahcarlsonetc" target="_blank"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 				</div>
-			</br></br>
+                <!--<br><br>-->
 				<h4>Mail Call</h4>
-			</br>
+                <!--<br>-->
 				<h5>Join the newsletter!</h5>
-				<a href="#"><button>Click Here!</button></a>
+				<!--<a href="#"><button>Click Here!</button></a>-->
+                <!-- You don't want to put a button inside an anchor tag. You can style your anchor tag to look like a button, but
+                     They have quite different meanings and effects. -->
 			</aside>
 		</div><!--.container-->
 	</section>
@@ -94,7 +107,7 @@
 	<footer>
 		<div class="container">
 			<h3>Get in Touch</h3>
-			<p>Send me a note at <a href="mailto:hellosarahcarlson@gmail.com">hellosarahcarlson@gmail.com<a/>.</p>
+			<p>Send me a note at <a href="mailto:hellosarahcarlson@gmail.com">hellosarahcarlson@gmail.com</a>.</p>
 			<br/>
 		<div class="social">
 			<ul>
