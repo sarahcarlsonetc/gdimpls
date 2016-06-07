@@ -5,7 +5,7 @@ html {
 }
 body {
 	background: white;
-	margin: 0 0 200px; /*make sure there is a margin at the bottom so footer doesnt overlap*/
+	margin: 0 0 150px; /*make sure there is a margin at the bottom so footer doesnt overlap*/
 }
 p {
 	font-size: 18px;
@@ -14,32 +14,21 @@ p {
 	font-weight: 300;
 }
 a {
-	color: #FF530D;
+	color: #FF4455;
 }
 a:link {
-	color: FF530D;
-	text-decoration: none;
+	color: #FF4455;
 }
 a:hover {
-	color: #FF8276;
+	color: #FF909B;
 	text-decoration: none;
-
 }
 a:active {
-	color: #FF530D;
+	color: #FF4455;
 }
 
 img:hover {
 	opacity: 0.60;
-}
-
-.sticky {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;
-	z-index: 100;
-	border-top: 0;
 }
 
 h1 {
@@ -93,17 +82,22 @@ button {
 button:hover {
 	background: #FF530D;
 }
+
+li {
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
 .social li{
 	padding: 5px;
 }
 
 /* Header */
 header {
-	margin: 20px 70px;
+	width: 100%;
 }
 
 .nav-main {
-	width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 20px;
 	font-family: 'Lato', sans-serif;
@@ -115,45 +109,27 @@ header {
 .nav-main li {
 	display:inline-block;
 	padding: 10px;
-	color: #FF530D;
 }
 .nav-main li:first-child{
 	padding-left: 0;
 }
 
 /*Setup a Container for Multi-Use*/
-.container {
-	width: 1000px;
-	margin: 0 auto;
+.container-fluid {
+	width: 100%;
+	padding:10px 100px;
 }
 
-/* Secton: Content */
-.content {
+.feature {
+	padding-bottom: 40px;
+	color: #FF4455;
 }
 
-.secondary {
-	clear: both;
-	margin: 0 auto;
-	padding: 20px;
-	margin-bottom: 30px;
-	margin-top: 30px;
-	max-width: 800px;
-}
-
-main {
-	float: left;
-	height: 750px;
-	width: 500px;
-	margin: 30px;
-	padding: 30px 20px 20px 70px;
+*main {
 }
 
 aside {
-	float: right;
-	width: 250px;
-	margin:30px;
-	padding: 30px 10px 20px 10px;
-	text-align: center;
+text-align: center;
 }
 
 aside img {
@@ -165,39 +141,16 @@ aside ul {
 }
 aside li {
 	display: inline-block;
-	font-size: 24px;
-}
-
-/* Section: Services */
-.services {
-}
-
-.box {
-	width: 240px;
-	height: 120px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-    /* Using a float: left for these causes the containing division to have no height (it's a side effect of using float.) */
-	/*float: left;*/
-    /* Changing to use display: inline-block gives the containing div the proper height. */
-  display: inline-block;
-	background: lightgrey;
-	padding: 30px;
-	padding-bottom: 50px;
-}
-
-.box:last-child {
-	margin-right: 0;
+	font-size: 20px;
 }
 
 /* Footer */
 footer {
-	height: 200px; /*set footer height*/
-	background: #303030;
+	height: 150px; /*set footer height*/
 	position: absolute; /*forces the footer position to be in a specific place*/
 	bottom: 0; /*tells the footer to be zero pixels from the bottom of the html tag*/
 	width: 100%; /*ensures the footer takes up the whole screen width wise*/
-	color: white;
+	color: black;
 }
 footer h3 {
 	padding: 30px;
@@ -207,11 +160,13 @@ footer p {
 }
 
 footer a {
-	color: white;
+}
+
+footer a:link {
 }
 
 footer a:hover {
-	color: #FF530D;
+	color: #FF909B;
 	text-decoration: none;
 }
 
@@ -224,10 +179,10 @@ footer li {
 	display:inline-block;
 	font-size: 26px;
 	margin: 2px;
+	color: white;
 }
 
 footer li:hover {
-	color: #FF8276;
 }
 
 .copyright {

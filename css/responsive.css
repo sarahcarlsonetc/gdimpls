@@ -3,20 +3,12 @@
 		width: 100%;
 	}
 	aside {
-		width: 25%;
-		margin: 3% 3% 3% 0;
 	}
 	aside img {
-		width: 50%;
 	}
 	main {
-		width: 55%;
-		margin: 3%;
-		padding: 3%;
 	}
 	.nav-main {
-		width: 100%;
-		clear: both;
 	}
 	.nav-main li a {
 		color: black;
@@ -29,88 +21,34 @@
 	a:active {
 		color: #3E3A40;
 	}
-	.box {
-	width: 55%;
-	height: 50%;
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-bottom: 3%;
-    /* Using a float: left for these causes the containing division to have no height (it's a side effect of using float.) */
-	/*float: left;*/
-    /* Changing to use display: inline-block gives the containing div the proper height. */
-    display: inline-block;
-	padding: 3%;
-	padding-bottom: 2%;
-	}
 
-.box:last-child {
-	margin-right: 0;
-	}
 @media only screen and (max-width: 999px) {
 	main {
-		width: 55%;
-		margin: 3% 0 3% 3%;
-		padding: 2%;
-		float: left;
+		width: 100%;
 	}
 	aside {
-		width: 30%;
-		margin: 3% 3% 3% 0;
-		padding: 2%;
-		float: right;
+		width: 100%;
 	}
 	aside img {
 		width: 50%;
-	}
-	.box {
-		width: 55%;
-		margin: 3% 0 3% 3%;
-		padding: 2%;
-		display: inline-block;
-	}
-	.box p {
-		display: none;
 	}
 }
 
 @media only screen and (max-width: 850px) {
 	main {
-		width: 90%;
-		height: 90%;
-		padding: 2%;
-		margin: 3%;
-		float: none;
-		position: center;
+
 	}
 	.content {
-		padding: 3%;
+
 	}
 	.secondary {
-		width: 80%;
+
 	}
 	aside {
-		width: 90%;
-		margin: 3%;
-		float: none;
-		position: center;
+
 	}
 	aside img {
-		width: 40%;
-	}
-	.box {
-		width: 90%;
-		position: center;
-		display: inline-block;
-		margin-bottom: .5%;
-	}
-	.box:last-child {
-		margin-bottom: 3%;
-	}
-	.box p {
-		display: none;
-	}
-	.box h4 {
-		text-align: center;
+
 	}
 }
 
